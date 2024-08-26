@@ -7,6 +7,11 @@ body {
   font-family: "Lato", "san-serif";
   font-size: 14px;
 }
+@media (min-width: 1300px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 1200px;
+  }
+}
 .bg-blue{
   background: #233a95;
 }
@@ -21,8 +26,152 @@ body {
 .headerWrapper .header {
   width: 100%;
   height: auto;
-  padding: 15px 0px;
+  padding: 25px 0px;
 }
 .logoWrapper img{
   width: 100%;
+}
+.headerWrapper .header .part2 .countryDrop{
+  width: 150px;
+  height: 60px;
+  min-width: 150px;
+  color: #000 !important;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 10px 10px;
+  border-radius: 7px;
+  
+}
+.headerWrapper .header .part2 .countryDrop{
+  text-align: left;
+  justify-content: flex-start;
+}
+.headerWrapper .header .part2 .countryDrop .label{
+  font-size: 12px
+  !important;
+  text-transform: capitalize !important;
+  color: rgba(0,0,0,0.7) !important;
+  line-height: 16px;
+}
+.headerWrapper .header .part2 .countryDrop .name{
+  font-size: 14px
+  !important;
+  text-transform: capitalize !important;
+  color: #233a95 !important;
+  font-weight: 700;
+  line-height: 16px
+}
+.headerWrapper .header .part2 .countryDrop span.m1-auto svg{
+  opacity: 0.7;
+}
+.header .headerSearch{
+  width: 60%;
+  height: 60px;
+  background: #f3f4f7;
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+  border: solid 1px rgba(0,0,0,0.1);
+}
+.header .headerSearch input{
+  background: transparent !important;
+  outline: none !important;
+  font-size: 18px;
+  color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 45px;
+  border: 0px !important;
+  padding: 0px 20px !important;
+}
+.header .headerSearch input::-webkit-input-placeholder{
+  color: rgba(0,0,0,0.6);
+}
+.header .headerSearch button{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 100;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px;
+  border-radius: 50% !important;
+  color: #000;
+}
+.header .headerSearch button svg{
+  font-size: 25px;
+}
+.header .part3 .circle{
+  align-items: center;
+  justify-content: center;
+  min-width: 45px !important;
+  height: 45px !important;
+  width: 45px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  color: #000
+}
+.header .part3 .circle svg{
+  font-size: 22px;
+}
+.cartTab button{
+  background: #fff1ee !important;
+}
+.cartTab button svg{
+  color: #ea2b0f
+}
+.cartTab .price{
+  font-size: 18px;
+  color: rgba(0,0,0,0.8);
+  font-weight: 700;
+}
+.cartTab .count{
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  background: #ea2b0f;
+  border-radius: 50%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}
+nav .allCatTab{
+  background: #2bbef9;
+  padding: 10px 20px;
+  border-radius: 30px
+}
+nav .allCatTab *{
+  color: #fff;
+}
+nav .allCatTab:hover{
+  background: #2bbef9;
+}
+nav .allCatTab .text{
+  font-weight: 600 ;
+}
+nav .allCatTab .icon1 svg{
+  font-size: 20px ;
+}
+nav .allCatTab .icon2 svg{
+  font-size: 15px ;
+}
+nav .navPart2 ul{
+  margin-bottom: 0px;
+}
+nav .navPart2 ul li a{
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(0,0,0,0.7);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+}
+nav .navPart2 ul li a:hover{
+  background: #f0faff;
+  color: #2bbef9;
+}
+nav .navPart2 ul li a svg{
+  font-size: 20px;
 }
